@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
   def index
-    @messages = Message.limit(0)
+    @messages = Message.All
   end
 
   def create
