@@ -4,6 +4,8 @@ class MessagesController < ApplicationController
   end
 
   def create
-    @message = Message.create!(params[:message])
+    @message = Message.create(params[:message])
+    @message.user = current_user.name
+    @message.save
   end
-end
+endg

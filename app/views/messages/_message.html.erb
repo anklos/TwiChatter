@@ -1,6 +1,6 @@
 <li>
   <% if current_user %>
-    <span class="created_at">by <%= current_user.name %> at <%= message.created_at.strftime("%H:%M")%></span>
+    <span class="created_at">by <%= message.user%> at <%= message.created_at.strftime("%H:%M")%></span>
     <%= message.content %>
   <% end %>
 </li>
