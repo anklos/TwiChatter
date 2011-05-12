@@ -8,4 +8,4 @@ class MessagesController < ApplicationController
     @message.user = current_user.name
     @message.save
   end
-endg
+end
