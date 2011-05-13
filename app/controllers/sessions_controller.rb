@@ -7,18 +7,13 @@ class SessionsController < ApplicationController
       redirect_to root_url       
   end
   
-  def destroy
-    
+  def destroy    
     user = User.find_by_id(session["user_id"])
-    #logger.info "****#{user.name}" 
     if user
       online_user = Onlineuser.find_by_name(user.name)  
       Onlineuser.delete(online_user)
     end    
     session["user_id"] = nil
     redirect_to root_url
-  end
-  
-  
-
+  end    
 end
