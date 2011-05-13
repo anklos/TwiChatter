@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110512135054) do
+ActiveRecord::Schema.define(:version => 20110513063450) do
 
   create_table "messages", :force => true do |t|
     t.string   "content"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110512135054) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nickname"
   end
 
   create_table "users", :force => true do |t|
@@ -31,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20110512135054) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nickname"
   end
 
 end
