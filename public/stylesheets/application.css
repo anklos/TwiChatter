@@ -77,12 +77,27 @@ a {
 ul#chat {
   list-style: none;
   padding: 0;
-  width: 600px;
+  width: 700px;
   height: 400px;
   border: solid 1px #777;
   margin: 5px 0;
   overflow: auto;
 }
+
+h1#online_users_title
+{
+  position: fixed;
+  top: 70px;
+  right: 150px;
+}
+ul#online_users {
+  position: fixed;
+  top: 120px;
+  right: 150px;
+  width: 200px;
+  height: 400px;
+}
+
 
 ul#chat li {
   margin: 2px 5px;
@@ -98,5 +113,5 @@ ul#chat li .created_at {
 }
 
 input#message_content {
-  width: 240px;
+  width: 440px;
 }

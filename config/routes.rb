@@ -1,5 +1,7 @@
 Twichatter::Application.routes.draw do
     
+  get "onlineusers/index"
+
   root :to => "messages#index"
   match "/auth/twitter/callback" => "sessions#create"
   match "/signout" => "sessions#destroy", :as => :signout
