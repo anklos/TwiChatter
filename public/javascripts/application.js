@@ -3,4 +3,7 @@ $(function() {
   faye.subscribe("/messages/new", function(data) {
     eval(data);
   });
+  faye.subscribe("/sessions/new", function(data) {
+    eval(data);
+  });
 });

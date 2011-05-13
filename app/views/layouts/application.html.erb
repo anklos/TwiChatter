@@ -11,12 +11,13 @@
     <div>
       <% if current_user %>
         Welcome <%= current_user.name %> | <%= link_to "Sign out", signout_path %>
-        <div id="container">
-                  
+        <div id="container">                  
           <%= yield %>
         </div>
-      <%else%>
+      <%else%>      
       <%= link_to 'Sign in with Twitter', "/auth/twitter" %>
+      <br/>
+      <h2>Please dont be afraid to sign in, this demo will only get read access to your twitter account</h2>
       <%end%>
     </div>    
   </body>
