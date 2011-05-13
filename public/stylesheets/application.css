@@ -19,7 +19,7 @@ a {
 }
 
 #container {
-  width: 75%; 
+  width: 90%; 
   margin: 0 auto;
   background-color: #FFF;
   padding: 20px 40px;
@@ -77,7 +77,7 @@ a {
 ul#chat {
   list-style: none;
   padding: 0;
-  width: 700px;
+  width: 600px;
   height: 400px;
   border: solid 1px #777;
   margin: 5px 0;
@@ -88,12 +88,12 @@ h1#online_users_title
 {
   position: fixed;
   top: 70px;
-  right: 150px;
+  right: 80px;
 }
 ul#online_users {
   position: fixed;
   top: 120px;
-  right: 150px;
+  right: 80px;
   width: 200px;
   height: 400px;
 }
