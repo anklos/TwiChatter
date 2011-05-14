@@ -16,9 +16,19 @@
           <%= yield %>
         </div>
       <%else%>      
-      <%= link_to 'Sign in with Twitter', "/auth/twitter" %>
+      <h2><%= link_to 'Sign in with Twitter', "/auth/twitter" %></h2>
       <br/>
-      <h2>Please dont be afraid to sign in, this demo will only get read access to your twitter account</h2>
+      <h3>Please dont be afraid to sign in, this demo will only get read access to your twitter account</h3>
+      <h3>1.Why makes this app?</h3>
+      <h3>Facebook supports both postwall and instant talk, so I want to make an instant messaging system for twitter.</h3>
+      <h3>2.Features:</h3>
+      <h3>2.1 Sign in with twitter account</h3>
+      <h3>2.2 Can communicate in a public chat room and show twitter account name after each message</h3>
+      <h3>2.3 Support @ filter, means you can write something like "@kevin @leni Good morning", only kevin and leni can see the message</h3>
+      <h3>2.4 Online user list to show who are currently signed in</h3>      
+      <br/>
+      <h3> Soucr Code: git@heroku.com:deep-window-919.git </h3>
+      <h3><%= link_to 'Author', "http://www.anklos.info" %> 
       <%end%>
     </div>    
   </body>
