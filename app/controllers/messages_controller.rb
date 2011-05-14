@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.create(params[:message])
-    @message.user = current_user.name
+    @message.user = current_user.nickname
     @message.save
   end
 end

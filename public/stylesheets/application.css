@@ -88,13 +88,13 @@ h1#online_users_title
 {
   position: fixed;
   top: 70px;
-  right: 80px;
+  right: 150px;
 }
 ul#online_users {
   position: fixed;
   top: 120px;
   right: 80px;
-  width: 200px;
+  width: 300px;
   height: 400px;
 }
 
