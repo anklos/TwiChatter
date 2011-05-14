@@ -1,5 +1,5 @@
 <li>
-  <% if current_user %>
+  <% if current_user && isAllowedToSee?(message,current_user) %>  
     <%= message.content %>
     <span class="created_at">by @<%= message.user%> at <%= message.created_at.strftime("%H:%M")%> <%= link_to 'tweet this', "http://www.twitter.com/?status=RT@#{message.user}: #{message.content}" %> </span>    
   <% end %>
