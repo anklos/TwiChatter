@@ -3,16 +3,21 @@ class ApplicationController < ActionController::Base
   
   helper_method :current_user, :online_users, :isAllowedToSee?
   
+  
+  #get current logged in user
   private 
   def current_user
     @current_user ||= User.find(session[:user_id]) if session[:user_id]
   end
   
+  #get all signed in users
   private
   def online_users
     @online_users = Onlineuser.all
   end
   
+  
+  #@ filter, help to check whether currently signed in user has permission to see the message
   private
   def isAllowedToSee?(message,usr)
     if !message.content.include?('@')

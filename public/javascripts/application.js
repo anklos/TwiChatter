@@ -1,5 +1,9 @@
 $(function() {
+  
+  //create faye client
   var faye = new Faye.Client('http://vivid-sword-660.heroku.com/bayeux');
+  
+  //subscribe to /messages/new channel
   faye.subscribe("/messages/new", function(data) {
     if(valuate(data,$('#username').text()))
     {
@@ -9,6 +13,8 @@ $(function() {
   $('#username').hide(); 
 });
 
+
+//check with the user can see the message
 function valuate(data,user_name)
 {
    i = data.indexOf("created_at")+17;
