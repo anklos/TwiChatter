@@ -10,10 +10,3 @@
 2.3 Support @ filter, means you can write something like "@kevin @leni Good morning", only kevin and leni can see the message
 2.4 You can tweet messages directly onto you Twitter postwall
 2.5 Online user list to show who are currently signed in
-
-
-
-[![NPM][npm]](https://npmjs.org/package/nested-observe)
-[![Dependency Status][dependencies]](https://david-dm.org/rkusa/nested-observe)
-[![Coverage][coveralls]](https://coveralls.io/r/rkusa/nested-observe)
-[![Build Status][travis]](http://travis-ci.org/rkusa/nested-observe)
